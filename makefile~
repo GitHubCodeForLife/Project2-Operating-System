@@ -1,3 +1,0 @@
-Run bai1
-gcc -pthread -o bai1 bai1.c
-./bai1
