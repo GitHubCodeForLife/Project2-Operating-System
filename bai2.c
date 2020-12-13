@@ -6,25 +6,26 @@
 #include <time.h>
 void* A1(void* arg) 
 { 
-  	printf("\nA1"); 
+  	printf("A1"); 
 } 
 void* A2(void* arg) 
 { 
- 	printf("\nA2"); 
+ 	printf("A2"); 
 } 
 void* B1(void* arg) 
 { 
- 	printf("\nB1"); 	
+ 	printf("B1"); 	
 } 
 void* B2(void* arg) 
 { 
- 	printf("\nB2");
+ 	printf("B2");
 } 
 int main()
 {
+	 printf("\n");
 	 pthread_t t1, t2;
 	 pid_t pid;
-	 pid = fork();
+	 pid = fork();// duplicates process
 	 switch (pid)
 	{
  	case -1:
@@ -43,6 +44,8 @@ int main()
 		pthread_join(t2, NULL); 
 		break;
  	}
+ 	printf("\n");
 	exit(0);
 	//return 0;
 }
+

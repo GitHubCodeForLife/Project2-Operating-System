@@ -33,8 +33,6 @@ int main()
 	pthread_create(&t1,NULL,thread,NULL); 
 	pthread_create(&t2,NULL,thread,NULL); 
 	
-	//pthread_join(t1,NULL); 
-	//pthread_join(t2,NULL); 
 	//Wait
 	while(x<100){
 		printf("\nGia tri X: %d",x);
@@ -43,8 +41,7 @@ int main()
 	printf("\nX lon 100");
 	pthread_detach(t1);
 	pthread_detach(t2);
-	//pthread_detach(t3);
 	sem_destroy(&mutex); 
-	exit(0);//Exit process PID = 0
+	return 0;
 } 
 

@@ -12,7 +12,6 @@ void* thread(void* arg)
 
 	//critical section 
 	do{
-		//printf("\n%d",x);
 		x=x+1;	
 		if(x==20)
 		   x=0;
@@ -21,7 +20,6 @@ void* thread(void* arg)
 	
 	//signal 
 	printf("\nJust Exiting...\n"); 
-	 
 } 
 
 int main() 
@@ -39,6 +37,6 @@ int main()
 	pthread_detach(t1);
 	pthread_detach(t2);
 	
-	exit(0);//Exit process PID = 0
+	return 0;
 } 
 
