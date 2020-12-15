@@ -1,4 +1,4 @@
-# project2_HDH
+# Đồ án 2 - Hệ điều hành : Đồng bộ hóa
 - [Bài 1. Đồng bộ giữa các tiểu trình ](#bài-1-đồng-bộ-giữa-các-tiểu-trình)
 - [Bài 2.  Đồng bộ giữa các tiểu trình và tiến trình](#bài-2-đồng-bộ-giữa-các-tiểu-trình-và-tiến-trình)
 
