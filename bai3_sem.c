@@ -17,12 +17,14 @@ void* MakeH(void* arg) {
 	sem_wait(&sem4);
 	printf("H\n");
 	sem_post(&sem1);
+	pthread_detach(pthread_self()); 
 }
 void* MakeO(void* arg) {
         //Wait H20
 	sem_wait(&sem3);
 	printf("O\n");
 	sem_post(&sem2);
+	pthread_detach(pthread_self()); 
 }
 
 void* MakeH2O(void* arg) {
@@ -41,6 +43,7 @@ void* MakeH2O(void* arg) {
 
 	//post mutex
 	sem_post(&mutex);
+	pthread_detach(pthread_self()); 
 	
 }
 
