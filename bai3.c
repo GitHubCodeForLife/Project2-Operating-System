@@ -6,13 +6,16 @@
 
 void* MakeH(void* arg) {
 	printf("H\n");
+	pthread_detach(pthread_self()); 
 }
 
 void* MakeO(void* arg) {
 	printf("O\n");
+	pthread_detach(pthread_self()); 
 }
 void* MakeH2O(void* arg) {
 	printf("=>H2O\n");
+	pthread_detach(pthread_self()); 
 }
 
 int main() 
