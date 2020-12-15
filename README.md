@@ -25,11 +25,11 @@ Trong bài này sẽ có 5 sem
 sem_t sem1, sem2, sem3, sem4 và sem_t mutex
 
 ```
-sem1: điều phối hẹn hò giữa  2H -> 1H20 --> Sau khi 2 H chạy thì H20 mới được chạy
-sem2: điều phối hẹn hò giữa  1O -> 1H20 --> Sau khi O chạy thì H20 mới được chạy
-sem3: điều phối hẹn hò giữa  1H20 -> 1O --> sau khi H20 chạy thì O mới được chạy ( Trong lần đầu chạy thì O không phải đợi vì value initial = 1 )
-sem4: điều phối hẹn hò giữa  1H20 -> 2H --> sau khi H20 chạy thì 2H mới được chạy ( Trong lần đầu chạy thì H không phải đợi vì value initial = 2 )
-mutex: điều phối truy xuất độc quyền giữa các thread H2O 
+sem1: đồng bộ hẹn hò giữa  2H -> 1H20 --> Sau khi 2 H chạy thì H20 mới được chạy
+sem2: đồng bộ hẹn hò giữa  1O -> 1H20 --> Sau khi O chạy thì H20 mới được chạy
+sem3: đồng bộ hẹn hò giữa  1H20 -> 1O --> sau khi H20 chạy thì O mới được chạy ( Trong lần đầu chạy thì O không phải đợi vì value initial = 1 )
+sem4: đồng bộ hẹn hò giữa  1H20 -> 2H --> sau khi H20 chạy thì 2H mới được chạy ( Trong lần đầu chạy thì H không phải đợi vì value initial = 2 )
+mutex: đồng bộ truy xuất độc quyền giữa các thread H2O 
 ```
 ## Tham khảo
 https://www.geeksforgeeks.org/thread-functions-in-c-c/
