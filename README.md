@@ -15,7 +15,7 @@
 ## Bài 1 Đồng bộ giữa các tiểu trình
 sem_t mutex: đồng bộ `Độc quyền truy xuất ` với value = 1
 ## Bài 2 Đồng bộ giữa các tiểu trình và tiến trình
-sem_t *sem1, *sem2: đồng bộ `Độc quyền truy xuất` giữa 2 tiểu trình
+sem_t *sem1, *sem2: đồng bộ `Độc quyền hẹn hò` (với value khởi tạo = 0 ) giữa 2 tiểu trình
 ```
 *sem1: sau khi A1 chạy xong --> A1 sẽ up (value) --> B2 lúc này mới chạy 
 *sem2: sau khi B1 chạy xong --> B1 sẽ up (value) --> A2 lúc này mới được chạy
