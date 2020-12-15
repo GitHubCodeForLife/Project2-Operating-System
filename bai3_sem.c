@@ -67,3 +67,7 @@ int main()
 } 
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes

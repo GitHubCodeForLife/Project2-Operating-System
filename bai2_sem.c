@@ -63,22 +63,16 @@ int main()
 		exit (0);
    	 }
     else{
-	printf("Hello from process %d\n",i);
 	if(i%2==0){
-		//wait 
-		printf("P %d is waiting...\n",i);
 		pthread_create(&t1,NULL,A1,NULL); 
 		pthread_join(t1, NULL);
 		sem_post(sem1);	
 		sem_wait(sem2);			
 		pthread_create(&t2,NULL,A2,NULL); 
 		pthread_join(t2, NULL);		
-		
-       		//sleep (1);
 	} else{
 		pthread_create(&t1,NULL,B1,NULL); 
 		pthread_join(t1, NULL);
-		
 		sem_post(sem2);
 		sem_wait(sem1);
 		pthread_create(&t2,NULL,B2,NULL); 

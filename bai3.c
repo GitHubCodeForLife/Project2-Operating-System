@@ -6,16 +6,13 @@
 
 void* MakeH(void* arg) {
 	printf("H\n");
-	pthread_exit(NULL);
 }
 
 void* MakeO(void* arg) {
 	printf("O\n");
-	pthread_exit(NULL);
 }
 void* MakeH2O(void* arg) {
 	printf("=>H2O\n");
-	pthread_exit(NULL);
 }
 
 int main() 
@@ -25,7 +22,6 @@ int main()
 		pthread_create(&t1,NULL,MakeH,NULL);	 		
 		pthread_create(&t2,NULL,MakeO,NULL);
 		pthread_create(&t3,NULL,MakeH2O,NULL);  
-		sleep(1);
 	}
 	return 0;
 } 
