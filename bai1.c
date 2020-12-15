@@ -7,9 +7,6 @@
 int x=0;
 void* thread(void* arg) 
 { 
-	
-	printf("\n Entered..\n"); 
-
 	//critical section 
 	do{
 		x=x+1;	
@@ -17,9 +14,6 @@ void* thread(void* arg)
 		   x=0;
 		usleep(100);
 	}while(1);
-	
-	//signal 
-	printf("\nJust Exiting...\n"); 
 } 
 
 int main() 

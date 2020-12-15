@@ -6,11 +6,8 @@
 sem_t mutex; 
 int x=0;
 void* thread(void* arg) 
-{ 
-	//wait 
-	sem_wait(&mutex); 
-	printf("\nP1: Entered..\n"); 
-
+{  
+	sem_wait(&mutex);
 	//critical section 
 	do{
 		//printf("\n%d",x);
@@ -19,10 +16,7 @@ void* thread(void* arg)
 		   x=0;
 		//usleep(100);
 	}while(1);
-	
-	//signal 
-	printf("\nJust Exiting...\n"); 
-	sem_post(&mutex); 
+	sem_post(&mutex); 	
 } 
 
 
