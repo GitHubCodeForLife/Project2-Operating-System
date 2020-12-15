@@ -1,15 +1,15 @@
 # project2_HDH
-- [Bài 1. Đồng bộ giữa các tiểu trình ]()
-- [Bài 2.  Đồng bộ giữa các tiểu trình và tiến trình]()
+- [Bài 1. Đồng bộ giữa các tiểu trình ](#bài-1-đồng-bộ-giữa-các-tiểu-trình)
+- [Bài 2.  Đồng bộ giữa các tiểu trình và tiến trình](#bài-2-đồng-bộ-giữa-các-tiểu-trình-và-tiến-trình)
 
    - [2.1 Đông bộ các tiểu trình]()
    - [2.2 Đông bộ các tiến trình]()
-- [Bài 3. Đồng bộ số lượng giữa các tiểu trình ]()
-- [Tham khảo]() 
+- [Bài 3. Đồng bộ số lượng giữa các tiểu trình ](#bài-3-đồng-bộ-số-lượng-giữa-các-tiểu-trình)
+- [Tham khảo](#tham-khảo) 
  
-   - [Thread in C]()
+   - [Thread in C](https://www.geeksforgeeks.org/thread-functions-in-c-c/)
    - [Mulitithread in C](https://www.geeksforgeeks.org/multithreading-c-2/)
-   - [Semaphore in C]()
+   - [Semaphore in C](https://www.geeksforgeeks.org/use-posix-semaphores-c/)
 
 
 ## Bài 1 Đồng bộ giữa các tiểu trình
@@ -33,5 +33,9 @@ mutex: điều phối truy xuất độc quyền giữa các thread H2O
 ```
 ## Tham khảo
 https://www.geeksforgeeks.org/thread-functions-in-c-c/
+
+
 https://www.geeksforgeeks.org/multithreading-c-2/
+
+
 https://www.geeksforgeeks.org/use-posix-semaphores-c/
