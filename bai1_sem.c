@@ -7,16 +7,16 @@ sem_t mutex;
 int x=0;
 void* thread(void* arg) 
 {  
-	sem_wait(&mutex);
-	//critical section 
 	do{
 		//printf("\n%d",x);
+		sem_wait(&mutex);
 		x=x+1;	
+		//critical section 
 		if(x==20)
 		   x=0;
+		sem_post(&mutex); 
 		//usleep(100);
 	}while(1);
-	sem_post(&mutex); 	
 } 
 
 
