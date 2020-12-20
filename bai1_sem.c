@@ -9,12 +9,15 @@ void* thread(void* arg)
 {  
 	do{
 		//printf("\n%d",x);
+		
 		sem_wait(&mutex);
-		x=x+1;	
 		//critical section 
+		x=x+1;	
+		sem_post(&mutex);
+		
 		if(x==20)
 		   x=0;
-		sem_post(&mutex); 
+		 
 		//usleep(100);
 	}while(1);
 } 
